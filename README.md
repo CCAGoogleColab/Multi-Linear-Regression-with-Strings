@@ -35,7 +35,7 @@ In this lab, you’ll use a multiple linear regression machine learning algorith
 	
 The format of this Pandas Dataframe should be the following.
 
-<img src="df3.png" width="500">
+<img src="df3.png" width="300">
 
 	
 # Dataset is now stored in a Pandas Dataframe
