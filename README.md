@@ -33,13 +33,19 @@ In this lab, you’ll use a multiple linear regression machine learning algorith
 	df3 = pd.read_csv('insurance2.csv')
 	print(df3)
 	
+Dataset is now stored in a Pandas Dataframe.
 The format of this Pandas Dataframe should be the following.
 
 <img src="df3.png" width="300">
 
+	Smoker = {'yes': 1,'no': 0} 
+	df3.smoker = [Smoker[item] for item in df3.smoker]
+	print(df3)
 	
-# Dataset is now stored in a Pandas Dataframe
-Smoker = {'yes': 1,'no': 0} 
-df3.smoker = [Smoker[item] for item in df3.smoker]
-print(df3)
+* However, because we can only perform linear regression with numerical values, we need to convert all the strings into categories. Thus, we need to determine how many categories are needed and make the change in the dataframe.
+* Convert all the yes and no under the "smoker" column into 1 and 0.
+* Expected Output:
+
+<img src="df3_2.png" width="300">
+
 
